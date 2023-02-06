@@ -39,18 +39,6 @@ PHP 7.2.5 ve üzeri
 
 Gelen ve giden aramalarınızı bu servisi kullanarak sorgulayabilirsiniz.
 
-```    
-        use Netgsm\Voipphone\voip;
-        $sabittelefon=new voip;
-        $data["date"]="260120230900";
-        $data["direction"]=4;
-        $sonuc=$sabittelefon->gorusmedetayi($data);
-        
-        echo '<pre>';
-            print_r($sonuc);
-        echo '<pre>';
-```
-
 <table>
 <thead>
 <tr>
@@ -70,6 +58,60 @@ Gelen ve giden aramalarınızı bu servisi kullanarak sorgulayabilirsiniz.
 </tr>
 </tbody>
 </table>
+
+
+
+
+```    
+        use Netgsm\Voipphone\voip;
+        $sabittelefon=new voip;
+        $data["date"]="260120230900";
+        $data["direction"]=4;
+        $sonuc=$sabittelefon->gorusmedetayi($data);
+        
+        echo '<pre>';
+            print_r($sonuc);
+        echo '<pre>';
+```
+
+#### Başarılı Sonuç Örneği
+
+```
+Array
+(
+    [0] => Array
+        (
+            [number] => 549xxxxxxx
+            [date] => 03.02.2023 21:18:54
+            [sure] => 00:00:08
+            [yoncode] => 1
+            [yonanlam] => Gelen Aramalar
+        )
+
+    [1] => Array
+        (
+            [number] => 549xxxxxxx
+            [date] => 03.02.2023 21:13:45
+            [sure] => 00:00:00
+            [yoncode] => 3
+            [yonanlam] => Cevapsız Aramalar
+        )
+
+   
+
+)
+```
+
+#### Başarısız Sonuç Örneği
+
+```
+Array
+(
+    [code] => 100
+    [durum] => Sistem hatası, sınır aşımı. (dakikada en fazla 2 kez sorgulanabilir.)
+)
+```
+
 
 <table>
 <thead>
