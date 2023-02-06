@@ -101,18 +101,6 @@ Array
 
 )
 ```
-
-#### Başarısız Sonuç Örneği
-
-```
-Array
-(
-    [code] => 100
-    [durum] => Sistem hatası, sınır aşımı. (dakikada en fazla 2 kez sorgulanabilir.)
-)
-```
-
-
 <table>
 <thead>
 <tr>
@@ -139,6 +127,19 @@ Array
 </tr>
 </tbody>
 </table>
+
+#### Başarısız Sonuç Örneği
+
+```
+Array
+(
+    [code] => 100
+    [durum] => Sistem hatası, sınır aşımı. (dakikada en fazla 2 kez sorgulanabilir.)
+)
+```
+
+
+
 
 ### Telesekreter Mesajları
 
