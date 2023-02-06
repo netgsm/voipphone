@@ -156,36 +156,23 @@ Abone numaranıza gelen sesli mesajları sorguyabilirsiniz.
 ```
 
 
+```
+Array
+(
+    [0] => Array
+        (
+            [number] =>  
+            [tarih] =>  08.08.2022 11:57 
+            [dosya] =>  http://sesdosya.netgsm.com.tr/upload.php?tip=7&a=24f4431869f3d493271eb8s212vs....... 
+        )
+
+    [1] => Array
+        (
+            [number] =>  
+            [tarih] =>  08.08.2022 11:29 
+            [dosya] =>  http://sesdosya.netgsm.com.tr/upload.php?tip=7&a=24f44318xasavs3.....
+        )
+ )
+```
 
 
-
-<table>
-<thead>
-<tr>
-<th>Hata Kodu</th>
-<th>Anlamı</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>30</code></td>
-<td>Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.Ayrıca eğer API erişiminizde IP sınırlaması yaptıysanız ve sınırladığınız ip dışında gönderim sağlıyorsanız 30 hata kodunu alırsınız. API erişim izninizi veya IP sınırlamanızı , web arayüzümüzden; sağ üst köşede bulunan ayarlar&gt; API işlemleri menüsunden kontrol edebilirsiniz.</td>
-</tr>
-<tr>
-<td><code>40</code></td>
-<td>Arama kriterlerinize göre listelenecek kayıt olmadığını ifade eder.</td>
-</tr>
-<tr>
-<td><code>50</code></td>
-<td>Arama kriterlerindeki tarih formatının hatalı olduğunu ifade eder. (ddMMyyyyHHmm)</td>
-</tr>
-<tr>
-<td><code>60</code></td>
-<td>Arama kiterlerindeki startdate ve stopdate zaman farkının 30 günden fazla olduğunu ifade eder.</td>
-</tr>
-<tr>
-<td><code>70</code></td>
-<td>Hatalı sorgulama. Gönderdiğiniz parametrelerden birisi hatalı veya zorunlu alanlardan birinin eksik olduğunu ifade eder.</td>
-</tr>
-</tbody>
-</table>
