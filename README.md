@@ -155,7 +155,7 @@ Abone numaranıza gelen sesli mesajları sorguyabilirsiniz.
         
 ```
 
-
+####  Başarılı istek örnek sonuç
 ```
 Array
 (
@@ -174,5 +174,16 @@ Array
         )
  )
 ```
+####  Başarısız istek örnek sonuç
 
+```
+Array
+(
+    [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.  
+    Ayrıca eğer API erişiminizde IP sınırlaması yaptıysanız ve sınırladığınız ip dışında gönderim  
+    sağlıyorsanız 30 hata kodunu alırsınız. API erişim izninizi veya IP sınırlamanızı , web arayüzümüzden;  
+    sağ üst köşede bulunan ayarlar> API işlemleri menüsunden kontrol edebilirsiniz.
+    [code] => 30
+)
 
+```
