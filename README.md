@@ -28,7 +28,7 @@ PHP 7.2.5 ve üzeri
 
 ### Kurulum
 
-composer require netgsm/voicesms 
+<b>composer require netgsm/voipphone</b>
 
 .env  dosyası içerisinde NETGSM ABONELİK bilgileriniz tanımlanması zorunludur.  
 
