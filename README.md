@@ -3,9 +3,9 @@
 
 
 
-# Laravel Netgsm Sabit Telefon Entegrasyonu
+# Laravel & Symfony Netgsm Sabit Telefon Entegrasyonu
 
-Netgsm ses paket aboneliği bulunan kullanıcılarımız için laravel paketidir.  
+Netgsm ses paket aboneliği bulunan kullanıcılarımız için composer paketidir.  
 
 # İletişim & Destek
 
@@ -21,6 +21,10 @@ https://www.netgsm.com.tr/dokuman/
 ### Supported Laravel Versions
 
 Laravel 6.x, Laravel 7.x, Laravel 8.x, Laravel 9.x, 
+
+### Supported Symfony Versions
+
+Symfony 4.x, Symfony 5.x, Symfony 6.x
 
 ### Supported Php Versions
 
@@ -68,10 +72,8 @@ Gelen ve giden aramalarınızı bu servisi kullanarak sorgulayabilirsiniz.
         $data["date"]="260120230900";
         $data["direction"]=4;
         $sonuc=$sabittelefon->gorusmedetayi($data);
-        
-        echo '<pre>';
-            print_r($sonuc);
-        echo '<pre>';
+        dd($sonuc);
+        die;
 ```
 
 #### Başarılı Sonuç Örneği
@@ -149,9 +151,8 @@ Abone numaranıza gelen sesli mesajları sorguyabilirsiniz.
         use Netgsm\Voipphone\voip;
         $telesekreter=new voip;
         $sonuc=$telesekreter->telesekretermesaj();
-        echo '<pre>';
-            print_r($sonuc);
-        echo '<pre>';
+        dd($sonuc);
+        die;
         
 ```
 
