@@ -6,7 +6,28 @@ namespace Netgsm\Voipphone;
 
 class voip
 {   
-   
+    private $username;
+    private $password;
+    public function __construct()
+    {
+     if(isset($_ENV['NETGSM_USERCODE']))
+      {
+          $this->username=$_ENV['NETGSM_USERCODE'];
+      }
+      else{
+          $this->username='x';
+      }
+      if(isset($_ENV['NETGSM_PASSWORD']))
+      {
+          $this->password=$_ENV['NETGSM_PASSWORD'];
+      }
+      else{
+          $this->password='x';
+      }
+      
+        
+    }
+    
     
     public function gorusmedetayi($data):array
     {
@@ -25,8 +46,8 @@ class voip
         $xmlData="<?xml version='1.0' encoding='UTF-8'?>
             <mainbody>
             <header>
-                <usercode>".env("NETGSM_USERCODE")."</usercode>
-                <password>".env("NETGSM_PASSWORD")."</password>
+                <usercode>".$this->username."</usercode>
+                <password>".$this->password."</password>
                 <date>".$data['date']."</date>
                 <direction>".$direction."</direction>      
             </header>
@@ -96,8 +117,8 @@ class voip
         $xmlData="<?xml version='1.0'?>
             <mainbody>
             <header>  
-            <usercode>".env("NETGSM_USERCODE")."</usercode>
-            <password>".env("NETGSM_PASSWORD")."</password>
+            <usercode>".$this->username."</usercode>
+            <password>".$this->password."</password>
             </header>
             </mainbody>";
 
