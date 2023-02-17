@@ -73,8 +73,10 @@ Gelen ve giden aramalarınızı bu servisi kullanarak sorgulayabilirsiniz.
 ```php    
         use Netgsm\Voipphone\voip;
         $sabittelefon=new voip;
-        $data["date"]="260120230900";
-        $data["direction"]=4;
+        $data=array(
+            'date'=>'160220230900',
+            'direction'=>2
+        );     
         $sonuc=$sabittelefon->gorusmedetayi($data);
         dd($sonuc);
         die;
