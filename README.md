@@ -70,7 +70,7 @@ Gelen ve giden aramalarınızı bu servisi kullanarak sorgulayabilirsiniz.
 
 
 
-```    
+```php    
         use Netgsm\Voipphone\voip;
         $sabittelefon=new voip;
         $data["date"]="260120230900";
@@ -82,7 +82,7 @@ Gelen ve giden aramalarınızı bu servisi kullanarak sorgulayabilirsiniz.
 
 #### Başarılı Sonuç Örneği
 
-```
+```php
 Array
 (
     [0] => Array
@@ -106,7 +106,7 @@ Array
    
 
 )
-```
+```php
 <table>
 <thead>
 <tr>
@@ -136,7 +136,7 @@ Array
 
 #### Başarısız Sonuç Örneği
 
-```
+```php
 Array
 (
     [code] => 100
@@ -151,7 +151,7 @@ Array
 
 Abone numaranıza gelen sesli mesajları sorguyabilirsiniz.
 
-```     
+```php     
         use Netgsm\Voipphone\voip;
         $telesekreter=new voip;
         $sonuc=$telesekreter->telesekretermesaj();
@@ -161,7 +161,7 @@ Abone numaranıza gelen sesli mesajları sorguyabilirsiniz.
 ```
 
 ####  Başarılı istek örnek sonuç
-```
+```php
 Array
 (
     [0] => Array
@@ -181,7 +181,7 @@ Array
 ```
 ####  Başarısız istek örnek sonuç
 
-```
+```php
 Array
 (
     [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.  
