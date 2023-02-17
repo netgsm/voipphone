@@ -106,7 +106,7 @@ Array
    
 
 )
-```php
+```
 <table>
 <thead>
 <tr>
